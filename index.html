@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Siman El Salvador</title>
+
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="anuncio">
+      🚚 Envío gratis en compras mayores a $50 · Solo esta semana
+    </div>
+
+    <header class="encabezado">
+      <div class="contenedor">
+        <a href="index.html" class="logo">SI<span>MAN</span></a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icono" aria-label="Abrir menú"
+          >☰</label
+        >
+
+        <nav class="menu" aria-label="Navegación principal">
+          <a href="index.html" class="activo">Inicio</a>
+          <a href="promociones.html">Promociones</a>
+          <a href="eventos.html">Eventos</a>
+          <a href="suscripcion.html">Suscríbete</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="contenedor">
+          <div class="hero-texto">
+            <span class="etiqueta">Temporada de ofertas</span>
+            <h1>Hasta <em>50% de descuento</em> en tus marcas favoritas</h1>
+            <p>
+              Moda, tecnología, hogar y belleza con precios especiales por
+              tiempo limitado. Visítanos en tienda o aprovecha nuestros eventos
+              exclusivos.
+            </p>
+            <div class="hero-botones">
+              <a href="promociones.html" class="btn btn-primario"
+                >Ver promociones</a
+              >
+              <a href="eventos.html" class="btn btn-secundario"
+                >Próximos eventos</a
+              >
+            </div>
+          </div>
+          <img
+            src="img/hero.jpg"
+            alt="Bolsas de compras con letreros de oferta y un carrito con un regalo"
+            width="600"
+            height="400"
+          />
+        </div>
+      </section>
+      <section class="seccion">
+        <div class="contenedor">
+          <div class="titulo-seccion">
+            <h2>Promociones destacadas</h2>
+            <p>Las ofertas más buscadas de la semana.</p>
+          </div>
+
+          <div class="grid-tarjetas">
+            <article class="tarjeta">
+              <div class="tarjeta-imagen">
+                <img
+                  src="img/moda.jpg"
+                  alt="Clientas revisando un pantalón blanco en una tienda de ropa"
+                />
+                <span class="descuento">-40%</span>
+              </div>
+              <div class="tarjeta-cuerpo">
+                <h3>Moda de temporada</h3>
+                <p>
+                  Ropa para dama, caballero y niños de marcas seleccionadas.
+                </p>
+                <p class="precio"><del>$49.99</del> <strong>$29.99</strong></p>
+                <a href="suscripcion.html" class="btn btn-primario"
+                  >Quiero esta oferta</a
+                >
+                <p class="vigencia">Válido hasta el 31 de octubre</p>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <div class="tarjeta-imagen">
+                <img
+                  src="img/tecnologia.jpg"
+                  alt="Audífonos inalámbricos sobre un escritorio"
+                />
+                <span class="descuento">-25%</span>
+              </div>
+              <div class="tarjeta-cuerpo">
+                <h3>Tecnología</h3>
+                <p>Audífonos, laptops y accesorios con precios especiales.</p>
+                <p class="precio">
+                  <del>$199.99</del> <strong>$149.99</strong>
+                </p>
+                <a href="suscripcion.html" class="btn btn-primario"
+                  >Quiero esta oferta</a
+                >
+                <p class="vigencia">Válido hasta agotar existencias</p>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <div class="tarjeta-imagen">
+                <img
+                  src="img/hogar.jpg"
+                  alt="Sala acogedora con sillón, cortinas y mesa de centro"
+                />
+                <span class="descuento">-30%</span>
+              </div>
+              <div class="tarjeta-cuerpo">
+                <h3>Hogar y decoración</h3>
+                <p>Renueva tu casa con muebles, cortinas y decoración.</p>
+                <p class="precio"><del>$120.00</del> <strong>$84.00</strong></p>
+                <a href="suscripcion.html" class="btn btn-primario"
+                  >Quiero esta oferta</a
+                >
+                <p class="vigencia">Válido hasta el 15 de noviembre</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <p>© 2026 Siman El Salvador · Tarea Kodigo</p>
+        <p>Diseñado y desarrollado por Sarai Musto</p>
+      </div>
+    </footer>
+  </body>
+</html>

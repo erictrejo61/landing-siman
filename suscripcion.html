@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscríbete | Siman El Salvador</title>
+
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Mi hoja de estilos -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="anuncio">
+      🚚 Envío gratis en compras mayores a $50 · Solo esta semana
+    </div>
+
+    <header class="encabezado">
+      <div class="contenedor">
+        <a href="index.html" class="logo">SI<span>MAN</span></a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icono" aria-label="Abrir menú"
+          >☰</label
+        >
+
+        <nav class="menu" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="promociones.html">Promociones</a>
+          <a href="eventos.html">Eventos</a>
+          <a href="suscripcion.html" class="activo">Suscríbete</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="cabecera-pagina">
+        <div class="contenedor">
+          <h1>Suscríbete al boletín</h1>
+          <p>Recibe ofertas exclusivas directamente en tu correo</p>
+        </div>
+      </section>
+
+      <section class="seccion">
+        <div class="contenedor suscripcion">
+          <div class="suscripcion-texto">
+            <h2>Beneficios de suscribirte</h2>
+            <p>
+              Únete a nuestra comunidad y sé el primero en enterarte de cada
+              promoción.
+            </p>
+            <ul>
+              <li>Cupón de $10 en tu primera compra</li>
+              <li>Acceso anticipado a eventos exclusivos</li>
+              <li>Ofertas personalizadas según tus intereses</li>
+            </ul>
+          </div>
+
+          <form class="formulario" action="gracias.html" method="get">
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ej. Ana Martínez"
+                required
+                minlength="3"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="tucorreo@ejemplo.com"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="7000-0000"
+                pattern="[0-9]{4}-?[0-9]{4}"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="tienda">Tienda preferida</label>
+              <select id="tienda" name="tienda" required>
+                <option value="">Selecciona una tienda</option>
+                <option>Siman Galerías</option>
+                <option>Siman Metrocentro</option>
+                <option>Siman La Gran Vía</option>
+                <option>Siman Plaza Mundo</option>
+                <option>Siman Santa Ana</option>
+                <option>Siman San Miguel</option>
+              </select>
+            </div>
+
+            <fieldset>
+              <legend>Me interesa recibir ofertas de:</legend>
+              <div class="opciones">
+                <label
+                  ><input type="checkbox" name="interes" value="moda" />
+                  Moda</label
+                >
+                <label
+                  ><input type="checkbox" name="interes" value="tecnologia" />
+                  Tecnología</label
+                >
+                <label
+                  ><input type="checkbox" name="interes" value="hogar" />
+                  Hogar</label
+                >
+                <label
+                  ><input type="checkbox" name="interes" value="belleza" />
+                  Belleza</label
+                >
+              </div>
+            </fieldset>
+
+            <label class="check-legal">
+              <input type="checkbox" name="acepto" required /> Acepto recibir
+              comunicaciones y la política de privacidad.
+            </label>
+
+            <button type="submit" class="btn btn-primario">Suscribirme</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <p>© 2026 Siman El Salvador · Tarea Kodigo</p>
+        <p>Diseñado y desarrollado por Sarai Musto</p>
+      </div>
+    </footer>
+  </body>
+</html>
